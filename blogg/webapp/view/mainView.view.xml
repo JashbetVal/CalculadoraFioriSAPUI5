@@ -1,8 +1,21 @@
-<mvc:View controllerName="blogg.controller.mainView"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-        <h1> Vlogg </h1>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="blogg.controller.mainView" displayBlock="true"><Page id="page" title="Calculadora" busyIndicatorSize="Large">
+        <content>
+            <Label text="Ingresa el primer valor:" width="100%" id="label1" design="Bold"/>
+            <Input xmlns="sap.m" value="Valor 1" id="input0" fieldWidth="10%" busyIndicatorSize="10%" width="30%" textAlign="Center"/>
+            <Label text="Ingresa el segundo valor:" width="100%" id="label0_1660340970909" design="Bold"/>
+            <Input xmlns="sap.m" value="Valor 2" id="input1" fieldWidth="10%" width="30%" textAlign="Center" autocomplete="false" required="true"/>
+            
+            
+            <sap.ui.core:InvisibleText xmlns:sap.ui.core="sap.ui.core" text="InvisibleText" id="text0"/>
+            <Label text="El resultado es: " width="100%" id="label2"/>
+            <Label text="Resultado" width="30%" id="label0" busyIndicatorSize="Auto" textDirection="LTR" wrappingType="Hyphenated" textAlign="Center" design="Bold"/>
+            <Label width="100%" id="label3"/>
+            <Button xmlns="sap.m" text="Suma" id="button1" width="25%"/>
+            <Button xmlns="sap.m" text="Resta" id="button2" width="25%"/>
+            <Button xmlns="sap.m" text="Multiplicación" id="button3" width="25%"/>
+            <Button xmlns="sap.m" text="División" id="button4" width="25%"/>
+            
+
+        </content>
     </Page>
 </mvc:View>
