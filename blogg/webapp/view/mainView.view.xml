@@ -1,0 +1,8 @@
+<mvc:View controllerName="blogg.controller.mainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+        <h1> Vlogg </h1>
+    </Page>
+</mvc:View>

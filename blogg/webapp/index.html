@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vlogg</title>
+    <link rel="stylesheet" href="./css/style.css"/> <!-- Aqui agregue los estilos CSS propios -->
+    <style>
+        html, body, body > div, #container, #container-uiarea {
+            height: 100%;
+        }
+    </style>
+    <script
+        id="sap-ui-bootstrap"
+        src="resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-resourceroots='{
+            "blogg": "./"
+        }'
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true"
+        data-sap-ui-frameOptions="trusted"
+    ></script>
+    <script id="locate-reuse-libs" src="./utils/locate-reuse-libs.js"
+        data-sap-ui-manifest-uri="./manifest.json"
+        data-sap-ui-componentName="blogg">
+    </script> 
+    <style> </style>
+
+
+<center>
+        <h1 style="color:rgb(99, 69, 13)"> Calculadora </h1>
+</center>
+
+<label>Inserta un numero: <input id="num1" type="text"></label><br>
+<label>Inserta un numero: <input id="num2" type="text"></label><br>
+<label>Resultado: <output id="resultado" type="text"></label><br>
+
+<script>
+   document.getElementById("resultado").innerHTML = 7+4;
+</script>
+
+
+<center>  
+<div> 
+        <br><br>
+        <button id="btnSuma" class="button1"> Sumar </button>   
+        <button id="btnResta" class="button2"> Restar </button> 
+        <button id="btnMultiplicacion"class="button3"> Multiplicar </button> 
+        <button id="btnDivision" class="button4"> Dividir </button>    
+    </div> 
+</center>  
+
+
+</head>
+<body class="sapUiBody sapUiSizeCompact" id="content" style="background-color:wheat;" class="body"></body>
+    <div
+     
+    data-sap-ui-component
+        data-name="blogg"
+        data-id="container"
+        data-settings='{"id" : "blogg"}'
+        data-handle-validation="true" 
+</div>
+</body>
+<script src="controller/functions.js"></script>
+</html>
