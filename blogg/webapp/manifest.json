@@ -111,6 +111,7 @@
         }
       }
     },
+
     "rootView": {
       "viewName": "blogg.view.App",
       "type": "XML",
